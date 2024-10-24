@@ -1,9 +1,9 @@
-//your JS code here. If required.
 document.addEventListener("DOMContentLoaded", () => {
   let output = document.getElementById("output");
 
   // Show loading text by default
   let loadingRow = document.createElement("tr");
+  loadingRow.id = "loading";  // Add the id to the loading row
   loadingRow.innerHTML = `<td colspan="2">Loading...</td>`;
   output.appendChild(loadingRow);
 
